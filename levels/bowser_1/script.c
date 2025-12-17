@@ -34,7 +34,7 @@ const LevelScript level_bowser_1_entry[] = {
         WARP_NODE(/*id*/ WARP_NODE_DEATH,   /*destLevel*/ LEVEL_CASTLE,    /*destArea*/ 1, /*destNode*/ WARP_NODE_25,  /*flags*/ WARP_NO_CHECKPOINT),
         TERRAIN(/*terrainData*/ bowser_1_collision),
         SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0002, /*seq*/ SEQ_LEVEL_BOSS_KOOPA),
-        TERRAIN_TYPE(/*terrainType*/ TERRAIN_WATER), //this is stupid
+        TERRAIN_TYPE(/*terrainType*/ TERRAIN_SNOW), //this is stupid
     END_AREA(),
 
     FREE_LEVEL_POOL(),
