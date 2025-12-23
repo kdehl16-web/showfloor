@@ -541,22 +541,19 @@ void set_environmental_camera_shake(s16 shake) {
 void set_camera_shake_from_point(s16 shake, f32 posX, f32 posY, f32 posZ) {
     switch (shake) {
         case SHAKE_POS_BOWLING_BALL:
-            set_pitch_shake_from_point(0x28, 0x8, 0x4000, 2000.f, posX, posY, posZ);
+            set_pitch_shake_from_point(0x28, 0x9, 0x4000, 2000.f, posX, posY, posZ);
             break;
 
         case SHAKE_POS_SMALL:
-            set_pitch_shake_from_point(0x80, 0x8, 0x4000, 4000.f, posX, posY, posZ);
-            set_fov_shake_from_point_preset(SHAKE_FOV_SMALL, posX, posY, posZ);
+            set_pitch_shake_from_point(0x80, 0x9, 0x4000, 4000.f, posX, posY, posZ);
             break;
 
         case SHAKE_POS_MEDIUM:
-            set_pitch_shake_from_point(0xC0, 0x8, 0x4000, 6000.f, posX, posY, posZ);
-            set_fov_shake_from_point_preset(SHAKE_FOV_MEDIUM, posX, posY, posZ);
+            set_pitch_shake_from_point(0xC0, 0x9, 0x4000, 6000.f, posX, posY, posZ);
             break;
 
         case SHAKE_POS_LARGE:
-            set_pitch_shake_from_point(0x100, 0x8, 0x3000, 8000.f, posX, posY, posZ);
-            set_fov_shake_from_point_preset(SHAKE_FOV_LARGE, posX, posY, posZ);
+            set_pitch_shake_from_point(0x100, 0x9, 0x3000, 8000.f, posX, posY, posZ);
             break;
     }
 }
@@ -2062,7 +2059,7 @@ s32 set_mode_c_up(struct Camera *c) {
     if (!(gCameraMovementFlags & CAM_MOVE_C_UP_MODE)) {
         gCameraMovementFlags |= CAM_MOVE_C_UP_MODE;
         store_lakitu_cam_info_for_c_up(c);
-        sCameraSoundFlags &= ~CAM_SOUND_C_UP_PLAYED;
+        play_sound_cbutton_up();
         return 1;
     }
     return 0;
@@ -2258,12 +2255,6 @@ void move_into_c_up(struct Camera *c) {
  */
 s32 mode_c_up_camera(struct Camera *c) {
     UNUSED u8 filler[12];
-
-    // Play a sound when entering C-Up mode
-    if (!(sCameraSoundFlags & CAM_SOUND_C_UP_PLAYED) && !(gObjCutsceneDone)) {
-        play_sound_cbutton_up();
-        sCameraSoundFlags |= CAM_SOUND_C_UP_PLAYED;
-    }
 
     // Zoom in first
     if (gCameraMovementFlags & CAM_MOVING_INTO_MODE) {

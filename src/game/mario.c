@@ -1321,6 +1321,7 @@ void update_mario_inputs(struct MarioState *m) {
         if (m->action & ACT_FLAG_ALLOW_FIRST_PERSON) {
             m->input |= INPUT_FIRST_PERSON;
         } else {
+            play_sound(SOUND_MENU_CAMERA_ZOOM_IN, gGlobalSoundSource);
             gCameraMovementFlags &= ~CAM_MOVE_C_UP_MODE;
         }
     }

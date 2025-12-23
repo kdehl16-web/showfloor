@@ -105,6 +105,7 @@ For more questions, join our [Discord server](https://discord.gg/ynabeAS4eD).
 - Matsilagi
 - lunr
 - CharD
+- RM05
 - Tony (Hard4Games)
 - aaali
 
