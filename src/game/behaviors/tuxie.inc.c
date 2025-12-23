@@ -20,9 +20,12 @@ void tuxies_mother_act_2(void) {
         if (o->oSubAction == 0) {
             cur_obj_init_animation_with_sound(0);
             o->oForwardVel = 10.0f;
-            if (1600.0f < cur_obj_lateral_dist_from_mario_to_home())
+            if (2000.0f < cur_obj_lateral_dist_from_mario_to_home())
                 o->oSubAction = 1;
             cur_obj_rotate_yaw_toward(o->oAngleToMario, 0x400);
+            if (o->oPosX > 8000.f) {
+                o->oPosX = 8000.f;
+            }
         } else {
             o->oForwardVel = 0.0f;
             cur_obj_init_animation_with_sound(3);
