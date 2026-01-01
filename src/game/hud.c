@@ -33,7 +33,7 @@ static s16 sPowerMeterStoredHealth;
 
 static struct PowerMeterHUD sPowerMeterHUD = {
     POWER_METER_HIDDEN,
-    140,
+    139,
     166,
     1.0,
 };
@@ -266,9 +266,9 @@ void render_hud_mario_lives(void) {
  * Renders the amount of coins collected.
  */
 void render_hud_coins(void) {
-    print_text(171, HUD_TOP_Y - 17, "+"); // 'Coin' glyph
-    print_text(187, HUD_TOP_Y - 17, "*"); // 'X' glyph
-    print_text_fmt_int(201, HUD_TOP_Y - 17, "%d", gHudDisplay.coins);
+    print_text(170, HUD_TOP_Y - 17, "+"); // 'Coin' glyph
+    print_text(186, HUD_TOP_Y - 17, "*"); // 'X' glyph
+    print_text_fmt_int(200, HUD_TOP_Y - 17, "%d", gHudDisplay.coins);
 }
 
 /**
@@ -276,9 +276,9 @@ void render_hud_coins(void) {
  * Disables "X" glyph when Mario has 100 stars or more.
  */
 void render_hud_stars(void) {
-    print_text(171, HUD_TOP_Y, "-"); // 'Star' glyph
-    print_text(187, HUD_TOP_Y, "*"); // 'X' glyph
-    print_text_fmt_int(201, HUD_TOP_Y, "%d", gHudDisplay.stars);
+    print_text(170, HUD_TOP_Y, "-"); // 'Star' glyph
+    print_text(186, HUD_TOP_Y, "*"); // 'X' glyph
+    print_text_fmt_int(200, HUD_TOP_Y, "%d", gHudDisplay.stars);
 }
 
 /**
