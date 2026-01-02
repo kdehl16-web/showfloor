@@ -140,7 +140,6 @@ For more questions, join our [Discord server](https://discord.gg/ynabeAS4eD).
 - [SM64 Decomp](https://github.com/n64decomp/sm64)
 - [64History’s Archives](https://archive.org/details/sm64-beta-content)
 - [Dudaw’s Archives](https://archive.org/details/sm64brp_src_abandoned)
-- [Roovahlees’s Archives](https://archive.org/details/@roovahlees)
 - [VGM & Other Instrument Sources Spreadsheet](https://docs.google.com/spreadsheets/d/1JJBlHHDc65fhZmKUGLrDTLCm6rfUU83-kbuD8Y0zU0o/edit?gid=2047725819#gid=2047725819)
 - [Retro Aesthetics’ Mario Series Matches](https://retroaesthetics.net/mario-series-matches/)
 - [TCRF’s Page](https://tcrf.net/Prerelease:Super_Mario_64_(Nintendo_64)/Shoshinkai_1995_Demo)
