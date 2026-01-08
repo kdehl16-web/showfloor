@@ -62,6 +62,7 @@ For more questions, join our [Discord server](https://discord.gg/ynabeAS4eD).
 - 1up Guy
 - stalechilibeans
 - `K-Dubs΄
+- B3313
 
 #### Research & Playtesting
 - Scraps
@@ -85,6 +86,7 @@ For more questions, join our [Discord server](https://discord.gg/ynabeAS4eD).
 - Diamond Hero
 - Holo
 - sonicdude143
+- B3313
 
 #### Music & Audio
 - skibidigurt
